@@ -1,1 +1,1 @@
-web: ./build/install/Ordering-Syste/bin/Ordering-System
+web: ./build/install/Ordering-System/bin/Ordering-System
