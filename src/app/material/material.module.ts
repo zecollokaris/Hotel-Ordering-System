@@ -7,6 +7,13 @@ import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import {MatSelectModule} from '@angular/material/select';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatMenuModule} from '@angular/material/menu';
+import {MatTooltipModule} from '@angular/material/tooltip';
+import {MatExpansionModule} from '@angular/material/expansion';
+import {MatTreeModule} from '@angular/material/tree';
+import {MatIconModule} from '@angular/material/icon';
+import {CdkTreeModule} from '@angular/cdk/tree';
+
 
 
 
@@ -19,7 +26,13 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
     MatSlideToggleModule,
     MatSelectModule,
     MatButtonModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatMenuModule,
+    MatTooltipModule,
+    MatExpansionModule,
+    MatTreeModule,
+    MatIconModule,
+    CdkTreeModule
   ],
   exports: [
       BrowserAnimationsModule,
@@ -28,7 +41,13 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
       MatSlideToggleModule,
       MatSelectModule,
       MatButtonModule,
-      MatCheckboxModule
+      MatCheckboxModule,
+      MatMenuModule,
+      MatTooltipModule,
+      MatExpansionModule,
+      MatTreeModule,
+      MatIconModule,
+      CdkTreeModule
   ],
   declarations: []
 })
