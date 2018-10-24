@@ -9,10 +9,14 @@ body{
   height: 50px;
   border-radius: 50%;
 }
+.container{
+  margin-top: 20px;
+}
 nav{
   background-color: rgba( 216, 8, 113,0.8);
   font-family: 'Pacifico', cursive;
 }
+
 
 
 /* font-family: 'Pacifico', cursive; italics */

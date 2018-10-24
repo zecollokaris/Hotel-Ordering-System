@@ -18,3 +18,7 @@ mat-form-field {
   border-radius: 50%;
   box-shadow: 5px 5px 20px 5px lightgrey;
 }
+h3{
+  text-align: center;
+    color: rgba( 216, 8, 113);
+}
