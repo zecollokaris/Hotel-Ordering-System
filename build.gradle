@@ -19,9 +19,8 @@ dependencies {
     compile 'com.sparkjava:spark-template-velocity:2.5.5'
     compile group: 'org.sql2o', name: 'sql2o', version: '1.5.4'
     compile group: 'org.postgresql', name: 'postgresql', version: "9.4-1201-jdbc41"
-    compile 'com.sparkjava:spark-debug-tools:0.5'
+    compile group :'com.fasterxml.jackson.core' , name : 'jackson-databind', version:'2.8.8.1'
 }
 
 defaultTasks = ['clean']
 task stage(dependsOn: ['clean', 'installApp'])
-
