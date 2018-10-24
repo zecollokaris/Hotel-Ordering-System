@@ -7,7 +7,7 @@ import {EntryComponent} from './entry/entry.component';
 import {MenuComponent} from './menu/menu.component';
 import { WaiterComponent } from './waiter/waiter.component';
 import { OrdersComponent } from './orders/orders.component';
-import { OrderComponent } from './order/order.component';
+import { ManagementComponent } from './management/management.component';
 
 
 
@@ -18,7 +18,7 @@ import { OrderComponent } from './order/order.component';
     MenuComponent,
     WaiterComponent,
     OrdersComponent,
-    OrderComponent
+    ManagementComponent
   ],
   imports: [
     BrowserModule,

@@ -6,13 +6,15 @@ import { EntryComponent} from '../entry/entry.component';
 import { MenuComponent } from '../menu/menu.component';
 import { WaiterComponent } from '../waiter/waiter.component';
 import { OrdersComponent } from '../orders/orders.component';
+import { ManagementComponent } from '../management/management.component';
 
 
 const routes: Routes = [
   { path: 'entry', component: EntryComponent },
   { path: 'menu', component: MenuComponent },
   { path: 'waiter', component: WaiterComponent},
-  {path: 'orders', component: OrdersComponent},
+  { path: 'orders', component: OrdersComponent },
+  { path: 'management', component: ManagementComponent},
   {path: '', redirectTo: '/entry', pathMatch: 'full'}
 
 ];
