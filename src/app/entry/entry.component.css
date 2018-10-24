@@ -1,0 +1,21 @@
+.card {
+  padding: 20px;
+  width: 300px;
+  height: 500px;
+  box-shadow: 0 5px 10px 5px lightgrey;
+}
+
+.container {
+  margin-top: 2em;
+}
+
+mat-form-field {
+  margin-top: 2em;
+}
+
+.logo {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  box-shadow: 5px 5px 20px 5px lightgrey;
+}
