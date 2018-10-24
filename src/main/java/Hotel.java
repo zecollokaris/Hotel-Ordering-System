@@ -44,8 +44,15 @@ public class Hotel implements Credentials{
     return true;
   }
   public static  List<String> getHotels(){
-    return DB.getConnection()
-    .createQuery("SELECT name FROM hotels LIMIT 10;")
-    .executeAndFetch(String.class);
+    List<String> list=null;
+    try {
+      list=DB.getConnection()
+      .createQuery("SELECT name FROM hotels LIMIT 10;")
+      .executeAndFetch(String.class);
+    }
+    catch(Exception ex){
+      System.out.println(ex.getMessage());
+    }
+    return list;
   }
 }
