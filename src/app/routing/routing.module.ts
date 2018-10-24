@@ -7,18 +7,19 @@ import { MenuComponent } from '../menu/menu.component';
 import { WaiterComponent } from '../waiter/waiter.component';
 import { OrdersComponent } from '../orders/orders.component';
 
-const routes: Routes = [
-  { path: "entry", component: EntryComponent },
-  { path: "menu", component: MenuComponent },
-  { path: "waiter", component: WaiterComponent},
-  {path: "orders", component: OrdersComponent},
-  {path: '',redirectTo: '/entry',pathMatch: 'full'}
 
-]
+const routes: Routes = [
+  { path: 'entry', component: EntryComponent },
+  { path: 'menu', component: MenuComponent },
+  { path: 'waiter', component: WaiterComponent},
+  {path: 'orders', component: OrdersComponent},
+  {path: '', redirectTo: '/entry', pathMatch: 'full'}
+
+];
 @NgModule({
   imports: [
     CommonModule,
-    //RoutingModule replaced
+    // RoutingModule replaced
     RouterModule.forRoot(routes)
      // { enableTracing: true }
   ],
