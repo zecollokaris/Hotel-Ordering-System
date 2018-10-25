@@ -13,6 +13,8 @@ export class EntryComponent implements OnInit {
     "Serena",
     "Mugg & Bean"];
 
+  totalprice = [200];
+
   constructor(route: ActivatedRoute) { }
   ngOnInit() {
   }

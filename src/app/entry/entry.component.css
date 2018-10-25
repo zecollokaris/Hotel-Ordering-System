@@ -11,6 +11,9 @@
 mat-form-field {
   margin-top: 2em;
 }
+.example-button-row{
+  margin-bottom: 2em;
+}
 
 .logo {
   width: 400px;

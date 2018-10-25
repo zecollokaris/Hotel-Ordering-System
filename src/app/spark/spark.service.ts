@@ -8,5 +8,5 @@ import { HttpClient } from '@angular/common/http';
 })
 export class SparkService {
 
-  constructor(private http: HTTP) { }
+  constructor(private http: HttpClient) { }
 }

@@ -7,7 +7,7 @@
   </form>
 </div> -->
 
- <div class="container">
+<div class="container">
   <div class="row">
     <div class="col-xs-12 col-sm-12 col-md-6">
       <div class="card cardEntry">
@@ -22,14 +22,15 @@
             </mat-select>
           </mat-form-field>
           <div class="example-button-row">
-              <a routerLink="/menu" routerLinkActive="active"><button mat-raised-button color="accent">MENU</button></a>
+            <a routerLink="/menu" routerLinkActive="active"><button mat-raised-button color="accent">MENU</button></a>
           </div>
-          <mat-form-field class="example-full-width">
-            <input type="number" matInput placeholder="PayMent">
-   </mat-form-field>
-            <div class="example-button-row">
-              <button mat-raised-button color="accent" >ORDER</button>
-            </div>
+          <!-- <mat-form-field class="example-full-width">
+             *ngFor="let totalprice of totalprice" [value]="totalprice" -->
+                <label for="total price">Total Amount: {{totalprice | currency}}</label>
+          <!-- </mat-form-field> -->
+          <div class="example-button-row">
+            <button mat-raised-button color="accent" >ORDER</button>
+          </div>
         </div>
       </div>
     </div>
@@ -38,6 +39,6 @@
     </div>
 
 
-  </div>
+    </div>
 
-</div>
+  </div>
