@@ -1,14 +1,21 @@
 @import "../node_modules/bootstrap/dist/css/bootstrap.css";
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
+
+::-webkit-scrollbar {
+display: none;
+}
 body{
   font-family: 'Oswald', sans-serif;
+  padding: 0;
+  margin: 0;
 }
 .logo{
   width: 52px;
   height: 50px;
   border-radius: 50%;
 }
+
 
 /*======================================================
                           Navbar
@@ -52,6 +59,15 @@ body{
   letter-spacing: 1px;
   text-transform: uppercase;
 }
+footer{
+  background-color: rgba( 216, 8, 113,0.8);
+  color: white;
+  height: 50PX;
+  padding-top: 5px;
+  margin-top: 50px;
+  text-align: center;
+}
+
 
 @media(max-width: 768px) {
   .logo {

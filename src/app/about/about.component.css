@@ -1,0 +1,37 @@
+.Team {
+  text-align: center;
+  background-color: lightgrey;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 5px 15px 0px grey;
+}
+
+.quote {
+  font-family: 'Pacifico', cursive;
+}
+
+ul {
+  list-style: none;
+  text-align: center;
+}
+
+.Team img {
+  width: 150px;
+  height: 150px;
+}
+.Team a{
+  text-decoration: underline;
+  color: black;
+}
+.matTooltip{
+  background-color: blue !important;
+}
+.AboutSection{
+  margin-bottom: 2em;
+  padding: 20px;
+  font-size: 20px;
+  background-color: rgba(242, 243, 244,0.7);
+  border-radius: 5px;
+  box-shadow: 0 5px 15px 0px grey;
+
+}

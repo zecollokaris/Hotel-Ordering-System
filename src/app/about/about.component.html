@@ -1,0 +1,96 @@
+<div class="container">
+  <div class="Card AboutSection">
+    <p>This is A brilliant Ordering System that's aimed at
+    easing the transition from your typical food-ordering
+    to a contemporary and rather more efficient means.Imagine having a bad day, you decide to hit your quick-dash restaurant to blow off some steam only to find this ugly curvy line, well with Our App all you have to do is find a comfortable spot, pull out your phone and in just a few seconds you've ordered your food from <b>ANY</b> restaurant your in.</p>
+
+  </div>
+
+  <!-- TEAM CARD -->
+  <div class="Card Team">
+    <h3>MEET THE TEAM!</h3>
+    <hr>
+    <div class="row">
+      <div class="col-md-4">
+        <img src="/assets/images/person.png" alt="Magz">
+        <ul>
+          <li><a href="https://github.com/Magz8984"  matTooltip="Visit on Github"
+             [matTooltipPosition]="position"
+            >Collins Magondu</a></li>
+          <li>Team Head</li>
+          <li>Back-End Dev</li>
+          <li class="quote">"Opportunity is born of independence handled in a responsible manner"</li>
+        </ul>
+      </div>
+
+      <div class="col-md-4">
+        <img src="/assets/images/person.png" alt="ZeCollo">
+        <ul>
+          <li><a href="https://github.com/zecollokaris"
+            matTooltip="Visit on Github"
+               [matTooltipPosition]="position"
+
+            >Collins Kariuki</a></li>
+          <li>Front-End Dev</li>
+          <li class="quote">"You Jamaazz"</li>
+        </ul>
+
+      </div>
+
+      <div class="col-md-4">
+        <img src="/assets/images/person.png" alt="Wess">
+        <ul>
+          <li><a href="https://github.com/Wess58"
+            matTooltip="Visit on Github"
+               [matTooltipPosition]="position"
+            >Wesley Mbate</a></li>
+          <li>Content Dev</li>
+          <li class="quote">"Why So Serious?!"</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTACT US FORM -->
+  <div class="container">
+    <mat-accordion>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Quick Contact
+          </mat-panel-title>
+          <mat-panel-description>
+            Contact us today, and get feedback within 24 hours!
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+
+
+        <form (ngSubmit)="onSubmit()">
+          <mat-form-field appearance="legacy">
+            <mat-label>Name</mat-label>
+            <input matInput required>
+            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+          </mat-form-field>
+          <br>
+          <mat-form-field appearance="legacy">
+            <mat-label>Email</mat-label>
+            <input type="email" matInput required>
+            <mat-icon matSuffix>email</mat-icon>
+          </mat-form-field>
+          <br>
+          <mat-form-field>
+            <textarea matInput placeholder="Textarea"></textarea>
+          </mat-form-field>
+          <br>
+          <div class="example-button-row">
+            <a routerLink="/orders" routerLinkActive="active"><button type="submit" mat-raised-button color="accent">SEND</button></a>
+          </div>
+        </form>
+
+
+
+
+      </mat-expansion-panel>
+    </mat-accordion>
+  </div>
+</div>

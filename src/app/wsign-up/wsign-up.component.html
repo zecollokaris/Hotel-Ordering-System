@@ -1,0 +1,66 @@
+<div class="container">
+  <div class="card cardSignup">
+    <div class="row">
+
+
+      <h3>SIGN IN</h3>
+      <hr>
+      <form (ngSubmit)="submitSignUp()">
+        <div class="col-md-8">
+
+
+          <mat-form-field appearance="legacy">
+            <mat-label>First Name</mat-label>
+            <input matInput required>
+            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+
+          </mat-form-field>
+          <mat-form-field appearance="legacy">
+            <mat-label>Second Name</mat-label>
+            <input matInput required>
+            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+
+          </mat-form-field>
+          <mat-form-field appearance="legacy">
+            <mat-label>Last Name</mat-label>
+            <input matInput required>
+            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+          </mat-form-field>
+
+
+          <mat-form-field appearance="legacy">
+            <mat-label>Phone number</mat-label>
+            <input type="tel" matInput required>
+            <mat-icon matSuffix>phone</mat-icon>
+            <mat-hint>Your phone number is kept confidential</mat-hint>
+          </mat-form-field>
+
+          <mat-form-field appearance="legacy">
+            <mat-label>Username</mat-label>
+            <input  matInput required>
+            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+            <mat-hint>Random Name</mat-hint>
+          </mat-form-field>
+
+          <mat-form-field>
+            <input matInput placeholder="Password" [type]="hide ? 'text' : 'password'" required>
+            <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
+          </mat-form-field>
+
+          <mat-form-field>
+            <input matInput placeholder="Confirm Password" [type]="hide ? 'text' : 'password'">
+      </mat-form-field>
+            <div class="example-button-row">
+              <a routerLink="/waiter" routerLinkActive="active"><button type="submit" mat-raised-button color="accent">LOGIN</button></a>
+            </div>
+        </div>
+        <div class="col-md-4">
+          <div class="color">
+
+          </div>
+        </div>
+      </form>
+
+    </div>
+  </div>
+</div>
