@@ -11,11 +11,14 @@ import { EntryComponent } from './entry/entry.component';
 import { MenuComponent } from './menu/menu.component';
 import { WaiterComponent } from './waiter/waiter.component';
 import { OrdersComponent } from './orders/orders.component';
+import { ManagementComponent } from './management/management.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { WSignUpComponent } from './wsign-up/wsign-up.component';
 import { AboutComponent } from './about/about.component';
 import { FormsModule } from '@angular/forms';
-import  {SparkService} from './spark/spark.service'
-import  {FirebaseService} from './firebase/firebase.service'
+import  {SparkService} from './spark/spark.service';
+import  {FirebaseService} from './firebase/firebase.service';
+
 
 @NgModule({
   declarations: [
@@ -24,6 +27,7 @@ import  {FirebaseService} from './firebase/firebase.service'
     MenuComponent,
     WaiterComponent,
     OrdersComponent,
+    ManagementComponent,
     WSignUpComponent,
     AboutComponent
   ],
@@ -32,9 +36,11 @@ import  {FirebaseService} from './firebase/firebase.service'
     HttpClientModule,
     MaterialModule,
     RoutingModule,
+    BrowserAnimationsModule,
     FormsModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule, // for database
+
   ],
   providers: [SparkService,FirebaseService],
   bootstrap: [AppComponent]
