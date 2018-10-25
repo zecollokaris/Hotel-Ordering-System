@@ -16,8 +16,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { WSignUpComponent } from './wsign-up/wsign-up.component';
 import { AboutComponent } from './about/about.component';
 import { FormsModule } from '@angular/forms';
-import  {SparkService} from './spark/spark.service'
-import  {FirebaseService} from './firebase/firebase.service'
+import  {SparkService} from './spark/spark.service';
+import  {FirebaseService} from './firebase/firebase.service';
 
 
 @NgModule({
@@ -27,7 +27,7 @@ import  {FirebaseService} from './firebase/firebase.service'
     MenuComponent,
     WaiterComponent,
     OrdersComponent,
-    ManagementComponent
+    ManagementComponent,
     WSignUpComponent,
     AboutComponent
   ],
@@ -36,7 +36,7 @@ import  {FirebaseService} from './firebase/firebase.service'
     HttpClientModule,
     MaterialModule,
     RoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
     FormsModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule, // for database
