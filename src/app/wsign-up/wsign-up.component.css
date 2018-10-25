@@ -1,0 +1,10 @@
+.cardSignup{
+  padding: 20px;
+  margin-top: 2em;
+  width: 600px;
+  height: 600px;
+  box-shadow: 0 5px 10px 5px lightgrey;
+}
+.color{
+  background-color: rgba( 216, 8, 113, 0.8);
+}

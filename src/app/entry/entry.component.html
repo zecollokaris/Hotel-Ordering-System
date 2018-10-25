@@ -9,15 +9,15 @@
 
  <div class="container">
   <div class="row">
-    <div class="col-md-6">
-      <div class="card">
+    <div class="col-xs-12 col-sm-12 col-md-6">
+      <div class="card cardEntry">
         <h3>CUSTOMER ORDER</h3>
         <hr>
         <div class="example-container">
           <mat-form-field>
             <mat-select placeholder="Hotel">
-              <mat-option  [value]="">
-                {{food}}
+              <mat-option *ngFor="let hotel of hotels" [value]="hotel">
+                {{hotel}}
               </mat-option>
             </mat-select>
           </mat-form-field>
@@ -28,12 +28,12 @@
             <input type="number" matInput placeholder="PayMent">
    </mat-form-field>
             <div class="example-button-row">
-              <button mat-raised-button color="accent">ORDER</button>
+              <button mat-raised-button color="accent" >ORDER</button>
             </div>
         </div>
       </div>
     </div>
-    <div class="col-md-6">
+    <div class="col-xs-12 col-sm-12 col-md-6">
       <img class="logo" src="../assets/images/Slogo.jpg" alt="LOGO">
     </div>
 
