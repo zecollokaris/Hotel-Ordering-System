@@ -7,7 +7,7 @@ import {Router} from '@angular/router';
 })
 export class AppComponent {
   title = 'Ordering-System';
-  constructor(private route:Router){
+  constructor(private route: Router) {
 
   }
 }

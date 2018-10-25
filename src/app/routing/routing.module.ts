@@ -10,11 +10,11 @@ import { ManagementComponent } from '../management/management.component';
 
 
 const routes: Routes = [
+  { path: 'management', component: ManagementComponent },
   { path: 'entry', component: EntryComponent },
   { path: 'menu', component: MenuComponent },
   { path: 'waiter', component: WaiterComponent},
   { path: 'orders', component: OrdersComponent },
-  { path: 'management', component: ManagementComponent},
   {path: '', redirectTo: '/entry', pathMatch: 'full'}
 
 ];
