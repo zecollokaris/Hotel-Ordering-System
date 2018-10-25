@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WSignUpComponent implements OnInit {
 
+    // submitSignUp(){
+    //   this.signup
+    // }
+
   constructor() { }
 
   ngOnInit() {

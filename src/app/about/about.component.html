@@ -60,25 +60,25 @@
             Contact us today, and get feedback within 24 hours!
           </mat-panel-description>
         </mat-expansion-panel-header>
-        <div class="row">
 
-          <form>
-            <mat-form-field appearance="legacy">
-              <mat-label>Name</mat-label>
-              <input matInput required>
-              <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-            </mat-form-field>
-              <br>
-            <mat-form-field>
-              <textarea matInput placeholder="Textarea"></textarea>
-            </mat-form-field>
-            <br>
-            <div class="example-button-row">
-              <a routerLink="/orders" routerLinkActive="active"><button type="submit" mat-raised-button color="accent">LOGIN</button></a>
-            </div>
-          </form>
 
-        </div>
+        <form (ngSubmit)="onSubmit()">
+          <mat-form-field appearance="legacy">
+            <mat-label>Name</mat-label>
+            <input matInput required>
+            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+          </mat-form-field>
+          <br>
+          <mat-form-field>
+            <textarea matInput placeholder="Textarea"></textarea>
+          </mat-form-field>
+          <br>
+          <div class="example-button-row">
+            <a routerLink="/orders" routerLinkActive="active"><button type="submit" mat-raised-button color="accent">SEND</button></a>
+          </div>
+        </form>
+
+
 
 
       </mat-expansion-panel>

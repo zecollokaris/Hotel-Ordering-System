@@ -2,15 +2,15 @@
   <!-- <mat-checkbox class="example-margin">Checked</mat-checkbox> -->
   <div class="card cardMenu">
 
-    <!-- <div class="example-button-row">
-      <button mat-button [matMenuTriggerFor]="menu" mat-raised-button   matTooltip="Choose Category" color="accent" *ngFor="let category of categories" [value]="category" >Menu Meal Choice</button>
-    </div> -->
+      <!-- <button mat-button [matMenuTriggerFor]="menu" mat-raised-button   matTooltip="Choose Category" color="accent" *ngFor="let category of categories" [value]="category" >Menu Meal Choice</button>
+    </div>  -->
 
     <!-- <mat-menu #menu="matMenu"> -->
     <!-- <button mat-menu-item>Drinks</button>
   <button mat-menu-item *ngFor="let food of foods" >Foods</button>
   <button mat-menu-item>Desert</button> -->
     <div class="container">
+      <form (ngSubmit)="submitMenu()">
       <mat-accordion>
         <mat-expansion-panel>
           <mat-expansion-panel-header>
@@ -23,7 +23,7 @@
           </mat-expansion-panel-header>
 
 
-          <form>
+          <form >
 
             <mat-checkbox class="example-margin">
               Chips - - - - - -  Ksh200
@@ -116,11 +116,10 @@
       </mat-accordion>
 
       <div class="example-button-row">
-        <a routerLink="/entry" routerLinkActive="active">  <button mat-raised-button color="accent" >ORDER</button></a>
+        <a routerLink="/entry" routerLinkActive="active">  <button type="submit" mat-raised-button color="accent" >ORDER</button></a>
       </div>
 
-    </div>
-
+    
 
     <!-- EXPANSION PANEL START & END -->
     <!-- <mat-expansion-panel>
