@@ -13,6 +13,7 @@ import {MatExpansionModule} from '@angular/material/expansion';
 import {MatTreeModule} from '@angular/material/tree';
 import {MatIconModule} from '@angular/material/icon';
 import {CdkTreeModule} from '@angular/cdk/tree';
+import { MatStepperModule } from '@angular/material/stepper';
 
 
 
@@ -32,7 +33,8 @@ import {CdkTreeModule} from '@angular/cdk/tree';
     MatExpansionModule,
     MatTreeModule,
     MatIconModule,
-    CdkTreeModule
+    CdkTreeModule,
+    MatStepperModule,
   ],
   exports: [
       BrowserAnimationsModule,
@@ -47,7 +49,8 @@ import {CdkTreeModule} from '@angular/cdk/tree';
       MatExpansionModule,
       MatTreeModule,
       MatIconModule,
-      CdkTreeModule
+      CdkTreeModule,
+    MatStepperModule,
   ],
   declarations: []
 })

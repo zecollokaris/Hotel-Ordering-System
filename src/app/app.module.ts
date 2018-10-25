@@ -8,6 +8,7 @@ import {MenuComponent} from './menu/menu.component';
 import { WaiterComponent } from './waiter/waiter.component';
 import { OrdersComponent } from './orders/orders.component';
 import { ManagementComponent } from './management/management.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 
@@ -23,7 +24,8 @@ import { ManagementComponent } from './management/management.component';
   imports: [
     BrowserModule,
     MaterialModule,
-    RoutingModule
+    RoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
