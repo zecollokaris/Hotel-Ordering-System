@@ -1,6 +1,11 @@
 .cardMenu{
     padding: 20px;
-    width: 300px;
-    height: 500px;
+    width: 400px;
     box-shadow: 0 5px 10px 5px lightgrey;
+}
+mat-accordion{
+  margin-bottom: 50px;
+}
+button{
+  margin-top: 2em;
 }

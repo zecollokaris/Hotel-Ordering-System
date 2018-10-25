@@ -8,10 +8,16 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class EntryComponent implements OnInit {
 
+    // submitOrder(){
+    //   this.addOrder
+    // }
+
   hotels = [
     "Java",
     "Serena",
     "Mugg & Bean"];
+
+
 
   constructor(route: ActivatedRoute) { }
   ngOnInit() {

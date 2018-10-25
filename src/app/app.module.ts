@@ -1,6 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+ import { environment } from '../environments/environment';
 
 
 import { MaterialModule } from './material/material.module';
@@ -29,7 +32,9 @@ import { AboutComponent } from './about/about.component';
     BrowserModule,
     HttpClientModule,
     MaterialModule,
-    RoutingModule
+    RoutingModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireDatabaseModule, // for database
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,36 +1,34 @@
-<!-- <div class="container">
-  <form class="form-group">
-    <div class="row">
-      <input type="text" class="form-control" placeholder="Enter Material" id="user"   name="username" >
-      <button   class="btn btn-primary" >Search</button>
-    </div>
-  </form>
-</div> -->
-
- <div class="container">
+<div class="container">
   <div class="row">
     <div class="col-xs-12 col-sm-12 col-md-6">
       <div class="card cardEntry">
-        <h3>CUSTOMER ORDER</h3>
-        <hr>
-        <div class="example-container">
-          <mat-form-field>
-            <mat-select placeholder="Hotel">
-              <mat-option *ngFor="let hotel of hotels" [value]="hotel">
-                {{hotel}}
-              </mat-option>
-            </mat-select>
-          </mat-form-field>
-          <div class="example-button-row">
-              <a routerLink="/menu" routerLinkActive="active"><button mat-raised-button color="accent">MENU</button></a>
-          </div>
-          <mat-form-field class="example-full-width">
-            <input type="number" matInput placeholder="PayMent">
-   </mat-form-field>
+
+        <form (ngSubmit)="submitOrder()">
+          <h3>CUSTOMER ORDER</h3>
+          <hr>
+          <div class="example-container">
+            <mat-form-field>
+              <mat-select placeholder="Hotel">
+                <mat-option *ngFor="let hotel of hotels" [value]="hotel">
+                  {{hotel}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
             <div class="example-button-row">
-              <button mat-raised-button color="accent" >ORDER</button>
+              <a routerLink="/menu" routerLinkActive="active"><button mat-raised-button color="accent">MENU</button></a>
             </div>
-        </div>
+            <mat-form-field appearance="legacy">
+              <mat-label>Table number</mat-label>
+              <input type="number" matInput required>
+            </mat-form-field>
+              <label for="total price">Total Amount: {{totalprice | currency}}</label>
+
+              <div class="example-button-row">
+                <button type="submit" mat-raised-button color="accent" >ORDER</button>
+              </div>
+          </div>
+        </form>
+
       </div>
     </div>
     <div class="col-xs-12 col-sm-12 col-md-6">
@@ -38,6 +36,7 @@
     </div>
 
 
-  </div>
 
-</div>
+    </div>
+
+  </div>

@@ -2,7 +2,7 @@
   <div class="card cardWaiter">
     <h3>SIGN IN</h3>
     <hr>
-    <form>
+    <form (ngSubmit)="submitSignIn()">
       <mat-form-field appearance="legacy">
         <mat-label>Username</mat-label>
         <input matInput required>
