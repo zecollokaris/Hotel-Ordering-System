@@ -3,6 +3,8 @@
 
 body{
   font-family: 'Oswald', sans-serif;
+  padding: 0;
+  margin: 0;
 }
 .logo{
   width: 52px;
@@ -15,6 +17,10 @@ body{
 nav{
   background-color: rgba( 216, 8, 113,0.8);
   font-family: 'Pacifico', cursive;
+}
+footer{
+  margin-top: 50px;
+  text-align: center;
 }
 
 

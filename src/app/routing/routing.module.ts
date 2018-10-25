@@ -7,6 +7,7 @@ import { MenuComponent } from '../menu/menu.component';
 import { WaiterComponent } from '../waiter/waiter.component';
 import { OrdersComponent } from '../orders/orders.component';
 import {WSignUpComponent} from '../wsign-up/wsign-up.component';
+import {AboutComponent} from '../about/about.component';
 
 const routes: Routes = [
   { path: "entry", component: EntryComponent },
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: "waiter", component: WaiterComponent},
   {path: "orders", component: OrdersComponent},
   {path: "signUp", component: WSignUpComponent},
+  {path: "about", component: AboutComponent},
   {path: '',redirectTo: '/entry',pathMatch: 'full'}
 
 ]
