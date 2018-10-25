@@ -19,7 +19,6 @@ import { FormsModule } from '@angular/forms';
 import {SparkService} from './spark/spark.service';
 import {FirebaseService} from './firebase/firebase.service';
 
-
 @NgModule({
   declarations: [
     AppComponent,
