@@ -13,9 +13,9 @@ import {MatExpansionModule} from '@angular/material/expansion';
 import {MatTreeModule} from '@angular/material/tree';
 import {MatIconModule} from '@angular/material/icon';
 import {CdkTreeModule} from '@angular/cdk/tree';
-
-
-
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatCardModule } from '@angular/material/card';
+import { MatTableModule } from '@angular/material/table';
 
 @NgModule({
   imports: [
@@ -32,9 +32,12 @@ import {CdkTreeModule} from '@angular/cdk/tree';
     MatExpansionModule,
     MatTreeModule,
     MatIconModule,
-    CdkTreeModule
+    CdkTreeModule,
+    MatTabsModule,
+    MatCardModule,
+    MatTableModule,
   ],
-  exports:[
+  exports: [
       BrowserAnimationsModule,
       MatFormFieldModule,
       MatInputModule,
@@ -47,7 +50,10 @@ import {CdkTreeModule} from '@angular/cdk/tree';
       MatExpansionModule,
       MatTreeModule,
       MatIconModule,
-      CdkTreeModule
+      CdkTreeModule,
+      MatTabsModule,
+      MatCardModule,
+      MatTableModule,
   ],
   declarations: []
 })

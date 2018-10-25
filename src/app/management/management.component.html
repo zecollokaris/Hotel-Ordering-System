@@ -1,0 +1,172 @@
+<link href="https://fonts.googleapis.com/css?family=KoHo" rel="stylesheet">
+<mat-tab-group>
+  <mat-tab label="Account"> 
+
+    <div style="text-align: center;" class="center">
+      <h3>Add a Hotel</h3>
+
+      <!-- Hotel Option -->
+      <form class="example-form">
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="New Hotel" >
+        </mat-form-field>
+      </form>
+      <!--Collapse Hotel Option -->
+
+      <!-- Menu Option -->
+            <form style="margin-top: 7%;" class="example-form">
+              <mat-form-field class="example-full-width">
+                <input matInput placeholder="Menu">
+              </mat-form-field>
+            </form>
+      <!--Collapse Menu Option -->
+
+        <!-- Add Waiter Button -->
+        <div style="margin-top: 3%;" class="example-button-row">
+          <button mat-raised-button color="primary">Add Waiter</button>
+        </div>
+
+    </div>
+
+
+  </mat-tab>
+  <mat-tab label="Waiter"> 
+    <!-- MAT-TAB-CONTENT  -->
+  
+  <mat-card class="example-card">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>PROGRESS</mat-card-title>
+      <mat-card-subtitle>This is Progress of waiters</mat-card-subtitle>
+    </mat-card-header>
+    <!-- This Is A Table Of Waiters Progress -->
+
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="table-responsive">
+              <table summary="This table shows how to create responsive tables using Bootstrap's default functionality" class="table table-bordered table-hover">
+                
+                <thead>
+                  <tr>
+
+                    <th>Waiter</th>
+                    <th>Clients Served</th>
+                    <th>Age</th>
+                    <th>Total Amount</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+
+                    <td>Spanish (official), English, Italian, German, French</td>
+                    <td>41,803,125</td>
+                    <td>31.3</td>
+                    <td>2,780,387</td>
+                  </tr>
+                  <tr>
+
+                    <td>English 79%, native and other languages</td>
+                    <td>23,630,169</td>
+                    <td>37.3</td>
+                    <td>7,739,983</td>
+                  </tr>
+                  <tr>
+
+                    <td>Greek 99% (official), English, French</td>
+                    <td>11,128,404</td>
+                    <td>43.2</td>
+                    <td>131,956</td>
+                  </tr>
+                  <tr>
+
+                    <td>Luxermbourgish (national) French, German (both administrative)</td>
+                    <td>536,761</td>
+                    <td>39.1</td>
+                    <td>2,586</td>
+                  </tr>
+                  <tr>
+
+                    <td>Kenya, small Sami- and  minorities</td>
+                    <td>142,467,651</td>
+                    <td>38.4</td>
+                    <td>17,076,310</td>
+                  </tr>
+                  <tr>
+
+                    <td>Swedish, small Sami- and Finnish-speaking minorities</td>
+                    <td>9,631,261</td>
+                    <td>41.1</td>
+                    <td>449,954</td>
+                  </tr>
+                  <h2 style="font-family: 'KoHo', sans-serif;margin-top: 10%; padding-bottom: 10%;">Add A Waiter</h2>
+                  
+                  <!-- Waiter Adding Section -->
+                  <p>
+                    <mat-form-field appearance="standard">
+                      <mat-label>Waiter Name.</mat-label>
+                      <input matInput placeholder="Add a Waiter">
+                      <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                      <mat-hint>Hint: name</mat-hint>
+                    </mat-form-field>
+                  </p>
+
+                  <!-- Unique Key Section -->
+                  <p>
+                    <mat-form-field appearance="standard">
+                      <mat-label>Unique Key.</mat-label>
+                      <input matInput placeholder="Add a Unique Key">
+                      <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                      <mat-hint>Hint: key</mat-hint>
+                    </mat-form-field>
+                  </p>
+
+                    <!-- Add Waiter Button -->
+                  <div class="example-button-row">
+                    <button mat-raised-button color="primary">Add Waiter</button>
+                  </div>
+
+                </tbody>
+                <tfoot>
+
+                </tfoot>
+              </table>
+            </div>
+            <!--end of .table-responsive-->
+          </div>
+        </div>
+      </div>
+      
+
+
+    <!--Collapse This Is A Table Of Waiters Progress -->
+  </mat-card>
+  <!-- COLLAPSE MAT-TAB-CONTENT  -->
+  </mat-tab>
+  <mat-tab label="Menu"> 
+    
+    <div style="text-align: center;" class="center">
+      <h3>Add Menu</h3>
+      <!-- Waiter Adding Section -->
+
+      <form class="example-form">
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Category" value="">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Meal" value="">
+        </mat-form-field>
+      
+        <mat-form-field class="example-full-width">
+          <textarea matInput placeholder="Description"></textarea>
+        </mat-form-field>
+      </form>
+
+      <div class="example-button-row">
+        <button mat-raised-button color="accent">Add Menu.</button>
+      </div>
+    </div>
+  </mat-tab>
+</mat-tab-group>
