@@ -7,4 +7,5 @@ export const environment = {
    projectId: "order-cefc2",
    storageBucket: "order-cefc2.appspot.com",
    messagingSenderId: "761477538386"
+}
 };

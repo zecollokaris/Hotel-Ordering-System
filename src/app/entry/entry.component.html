@@ -2,41 +2,34 @@
   <div class="row">
     <div class="col-xs-12 col-sm-12 col-md-6">
       <div class="card cardEntry">
-
         <form (ngSubmit)="submitOrder()">
           <h3>CUSTOMER ORDER</h3>
           <hr>
           <div class="example-container">
             <mat-form-field>
-              <mat-select placeholder="Hotel">
+              <mat-select placeholder="Hotel" name="hotel" [(ngModel)]="customer.hotel" #hotel="ngModel" required>
                 <mat-option *ngFor="let hotel of hotels" [value]="hotel">
                   {{hotel}}
                 </mat-option>
               </mat-select>
             </mat-form-field>
             <div class="example-button-row">
-              <a routerLink="/menu" routerLinkActive="active"><button mat-raised-button color="accent">MENU</button></a>
+              <button mat-raised-button color="accent" (click)="goToUrl()" type="button">MENU</button>
             </div>
             <mat-form-field appearance="legacy">
               <mat-label>Table number</mat-label>
-              <input type="number" matInput required>
+              <input type="number" matInput name="table" [(ngModel)]="customer.tableName" #table="ngModel" required>
             </mat-form-field>
               <label for="total price">Total Amount: {{totalprice | currency}}</label>
-
               <div class="example-button-row">
                 <button type="submit" mat-raised-button color="accent" >ORDER</button>
               </div>
           </div>
         </form>
-
       </div>
     </div>
     <div class="col-xs-12 col-sm-12 col-md-6">
       <img class="logo" src="../assets/images/Slogo.jpg" alt="LOGO">
     </div>
-
-
-
     </div>
-
   </div>

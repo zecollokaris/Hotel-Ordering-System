@@ -11,7 +11,7 @@ import {AboutComponent} from '../about/about.component';
 
 const routes: Routes = [
   { path: "entry", component: EntryComponent },
-  { path: "menu", component: MenuComponent },
+  { path: "menu/:name", component: MenuComponent },
   { path: "waiter", component: WaiterComponent},
   {path: "orders", component: OrdersComponent},
   {path: "signUp", component: WSignUpComponent},
