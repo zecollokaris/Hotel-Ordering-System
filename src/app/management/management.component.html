@@ -6,8 +6,26 @@
       <h3>Add a Hotel</h3>
 
       <!-- Hotel Option -->
+      <form class="example-form">
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="New Hotel" >
+        </mat-form-field>
+      </form>
+      <!--Collapse Hotel Option -->
 
-      
+      <!-- Menu Option -->
+            <form style="margin-top: 7%;" class="example-form">
+              <mat-form-field class="example-full-width">
+                <input matInput placeholder="Menu">
+              </mat-form-field>
+            </form>
+      <!--Collapse Menu Option -->
+
+        <!-- Add Waiter Button -->
+        <div style="margin-top: 3%;" class="example-button-row">
+          <button mat-raised-button color="primary">Add Waiter</button>
+        </div>
+
     </div>
 
 
@@ -126,5 +144,29 @@
   </mat-card>
   <!-- COLLAPSE MAT-TAB-CONTENT  -->
   </mat-tab>
-  <mat-tab label="Menu"> Content 3 </mat-tab>
+  <mat-tab label="Menu"> 
+    
+    <div style="text-align: center;" class="center">
+      <h3>Add Menu</h3>
+      <!-- Waiter Adding Section -->
+
+      <form class="example-form">
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Category" value="">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Meal" value="">
+        </mat-form-field>
+      
+        <mat-form-field class="example-full-width">
+          <textarea matInput placeholder="Description"></textarea>
+        </mat-form-field>
+      </form>
+
+      <div class="example-button-row">
+        <button mat-raised-button color="accent">Add Menu.</button>
+      </div>
+    </div>
+  </mat-tab>
 </mat-tab-group>
