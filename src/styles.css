@@ -1,6 +1,10 @@
 @import "../node_modules/bootstrap/dist/css/bootstrap.css";
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
+
+::-webkit-scrollbar {
+display: none;
+}
 body{
   font-family: 'Oswald', sans-serif;
   padding: 0;
