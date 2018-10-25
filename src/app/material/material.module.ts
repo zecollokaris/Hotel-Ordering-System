@@ -15,6 +15,7 @@ import {MatIconModule} from '@angular/material/icon';
 import {CdkTreeModule} from '@angular/cdk/tree';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatCardModule } from '@angular/material/card';
+import { MatTableModule } from '@angular/material/table';
 
 
 
@@ -37,6 +38,7 @@ import { MatCardModule } from '@angular/material/card';
     CdkTreeModule,
     MatTabsModule,
     MatCardModule,
+    MatTableModule,
   ],
   exports: [
       BrowserAnimationsModule,
@@ -54,6 +56,7 @@ import { MatCardModule } from '@angular/material/card';
       CdkTreeModule,
       MatTabsModule,
       MatCardModule,
+      MatTableModule,
   ],
   declarations: []
 })
