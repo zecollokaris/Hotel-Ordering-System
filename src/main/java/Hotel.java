@@ -1,7 +1,10 @@
-import  java.util.List;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.List;
 public class Hotel implements Credentials{
   private String name;
   private String password;
+  private Map<String,Object> lists=new HashMap<String,Object>();
   public void setName(String name){
     this.name=name;
   }
@@ -54,5 +57,24 @@ public class Hotel implements Credentials{
       System.out.println(ex.getMessage());
     }
     return list;
+  }
+  // Gets all orders For That Hotel Name
+  public Map<String,Object> addDataOnAuth(){
+    try{
+      Integer amount=DB.getConnection()
+      .createQuery("SELECT SUM(price) FROM orders WHERE hotel=:name")
+      .addParameter("name",this.name)
+      .executeAndFetchFirst(Integer.class);
+      lists.put("cash",amount);
+      String sqlOrders="SELECT id,price,time,hotel,waiter FROM orders WHERE hotel=:name";
+      List<Order> listOfOrders=DB.getConnection().createQuery(sqlOrders)
+      .addParameter("name",this.name)
+      .executeAndFetch(Order.class);
+      lists.put("orders",listOfOrders);
+    }
+    catch(Exception ex){
+      System.out.println(ex.getMessage());
+    }
+    return lists;
   }
 }
