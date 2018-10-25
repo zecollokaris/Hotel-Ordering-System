@@ -1,6 +1,14 @@
 <link href="https://fonts.googleapis.com/css?family=KoHo" rel="stylesheet">
 <mat-tab-group>
-  <mat-tab label="Account"> Content 1 </mat-tab>
+  <mat-tab label="Account"> 
+
+    <div style="text-align: center;" class="center">
+      <h3>Add a Hotel</h3>
+      
+    </div>
+
+
+  </mat-tab>
   <mat-tab label="Waiter"> 
     <!-- MAT-TAB-CONTENT  -->
   
@@ -72,23 +80,32 @@
                     <td>449,954</td>
                   </tr>
                   <h2 style="font-family: 'KoHo', sans-serif;margin-top: 10%; padding-bottom: 10%;">Add A Waiter</h2>
+                  
+                  <!-- Waiter Adding Section -->
                   <p>
                     <mat-form-field appearance="standard">
                       <mat-label>Waiter Name.</mat-label>
                       <input matInput placeholder="Add a Waiter">
                       <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-                      <mat-hint>Hint</mat-hint>
+                      <mat-hint>Hint: name</mat-hint>
                     </mat-form-field>
                   </p>
 
+                  <!-- Unique Key Section -->
                   <p>
                     <mat-form-field appearance="standard">
-                      <mat-label>Waiter Name.</mat-label>
-                      <input matInput placeholder="Add a Waiter">
+                      <mat-label>Unique Key.</mat-label>
+                      <input matInput placeholder="Add a Unique Key">
                       <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-                      <mat-hint>Hint</mat-hint>
+                      <mat-hint>Hint: key</mat-hint>
                     </mat-form-field>
                   </p>
+
+                    <!-- Add Waiter Button -->
+                  <div class="example-button-row">
+                    <button mat-raised-button color="primary">Add Waiter</button>
+                  </div>
+
                 </tbody>
                 <tfoot>
 
