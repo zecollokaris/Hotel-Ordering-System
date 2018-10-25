@@ -85,6 +85,7 @@ body{
 #navbar li {
   display: inline-block;
   font-size: 20px;
+  font-family: 'Abril Fatface',cursive;
 }
 
 #navbar li a {
@@ -126,14 +127,14 @@ body{
 }
 
 #navbar li a:after {
-  background: white;
+  background: black;
   right: 0;
   text-decoration: none;
   /* transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1); */
 }
 
 #navbar li a:hover:before {
-  background: white;
+  background: rgb(202, 41, 68);
   width: 100%;
   transition: width 0.5s cubic-bezier((0.22, 0.61, 0.36, 1));
   text-decoration: none;
@@ -154,3 +155,7 @@ body{
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.cont-body{
+  margin-top: 5%;
+}
