@@ -16,9 +16,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { WSignUpComponent } from './wsign-up/wsign-up.component';
 import { AboutComponent } from './about/about.component';
 import { FormsModule } from '@angular/forms';
-import  {SparkService} from './spark/spark.service';
-import  {FirebaseService} from './firebase/firebase.service';
-
+import {SparkService} from './spark/spark.service';
+import {FirebaseService} from './firebase/firebase.service';
 
 @NgModule({
   declarations: [
@@ -29,7 +28,7 @@ import  {FirebaseService} from './firebase/firebase.service';
     OrdersComponent,
     ManagementComponent,
     WSignUpComponent,
-    AboutComponent
+    AboutComponent,
   ],
   imports: [
     BrowserModule,
@@ -42,7 +41,7 @@ import  {FirebaseService} from './firebase/firebase.service';
     AngularFireDatabaseModule, // for database
 
   ],
-  providers: [SparkService,FirebaseService],
+  providers: [SparkService, FirebaseService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
