@@ -14,17 +14,34 @@
         <mat-form-field>
           <mat-select placeholder="Categorys" name="name" [(ngModel)]="category.name" #name="ngModel" (selectionChange)="getFoods()" required>
             <mat-option *ngFor="let category of categorys" [value]="category">
-              {{category.name}}
+                {{category.name}}
             </mat-option>
           </mat-select>
         </mat-form-field>
         <br>
         <br>
-        <mat-checkbox>
-        </mat-checkbox>
-      <div class="example-button-row">
+            <div class="example-button-row">
         <a routerLink="/entry" routerLinkActive="active">  <button type="submit" mat-raised-button color="accent" >ORDER</button></a>
       </div>
+
+      <!-- <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title *ngFor="let category of categorys" [value]="category">
+        {{category.name}}
+      </mat-panel-title>
+      <mat-panel-description>
+        {{category.name}}
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+
+    <mat-form-field>
+      <input matInput placeholder="First name">
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput placeholder="Age">
+    </mat-form-field>
+  </mat-expansion-panel> -->
       </form>
 
 
