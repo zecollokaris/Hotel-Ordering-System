@@ -27,7 +27,7 @@ body{
   top: 0;
   height: 60px;
   line-height: 60px;
-  width: 100vw;
+  width: 80vw;
   z-index: 10;
   text-decoration: none;
 }
@@ -88,7 +88,7 @@ footer{
 
 @media(max-width: 640px) {
   #navbar ul {
-    display: none;
+    display: flex;
   }
 }
 
