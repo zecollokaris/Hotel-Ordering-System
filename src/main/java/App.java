@@ -131,5 +131,9 @@ public class App {
           }
           return 0;
         });
+        post("/addWaiter",(req,res)->{
+         res.status(200);
+           return om.writeValueAsString(Hotel.addWaiter(req.queryParams("hotel"),req.queryParams("name")));
+        });
     }
 }
