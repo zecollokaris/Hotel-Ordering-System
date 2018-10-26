@@ -8,6 +8,7 @@ import  {Food} from '../food'
   providedIn: 'root'
 })
 export class SparkService {
+  show:boolean=true;
   endpoint:string="https://orderingsystem8984.herokuapp.com";
   categorys:Category[]=[];
   httpOtions={
@@ -24,10 +25,14 @@ export class SparkService {
      for(let data of res){
        hotels.push(data);
      }
+    this.show=false;
    }).catch(res=>{
     console.log(res);
    });
-   return hotels;
+   return {
+     hotels:hotels,
+     show:this.show
+   }
   }
   getCategorys(hotel:string){
     let category=new Category(0,"","",false);

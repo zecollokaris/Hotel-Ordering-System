@@ -15,6 +15,11 @@ body{
   height: 50px;
   border-radius: 50%;
 }
+@media(max-width: 640px) {
+  .logo {
+    display: none;
+  }
+}
 
 
 /*======================================================
@@ -34,9 +39,8 @@ body{
 .nav-wrapper {
   margin: auto;
   text-align: center;
-  width: 70%;
+  width: 50%;
 }
-
 @media(max-width: 768px) {
   .nav-wrapper {
     width: 90%;

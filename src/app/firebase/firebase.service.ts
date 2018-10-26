@@ -6,7 +6,13 @@ import {Customer} from '../customer'
   providedIn: 'root'
 })
 export class FirebaseService {
-  constructor(private db:AngularFireDatabase) {
-
+  constructor(public db:AngularFireDatabase) {
+  }
+  pushCustomerToDB(hotel:string,order:object){
+    let customer={
+      order:order,
+      time:new Date().getTime();
+    }
+    this.db.object(hotel).update(customer);
   }
 }
