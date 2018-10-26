@@ -18,6 +18,7 @@ import { AboutComponent } from './about/about.component';
 import { FormsModule } from '@angular/forms';
 import {SparkService} from './spark/spark.service';
 import {FirebaseService} from './firebase/firebase.service';
+import { SpinnerDirective } from './spin/spinner.directive';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import {FirebaseService} from './firebase/firebase.service';
     ManagementComponent,
     WSignUpComponent,
     AboutComponent,
+    SpinnerDirective,
   ],
   imports: [
     BrowserModule,

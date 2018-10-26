@@ -9,12 +9,13 @@
           <div class="example-container">
             <mat-form-field>
               <mat-select placeholder="Hotel" name="hotel" [(ngModel)]="customer.hotel" #hotel="ngModel" required>
-                <mat-option *ngFor="let hotel of hotels" [value]="hotel">
+                <mat-option *ngFor="let hotel of obj.hotels" [value]="hotel">
                   {{hotel}}
                 </mat-option>
               </mat-select>
             </mat-form-field>
-
+            <mat-progress-spinner class="example-margin" [color]="color" [mode]="mode" [value]="value" *ngIf="obj.show">
+            </mat-progress-spinner>
             <div class="example-button-row">
               <button mat-raised-button color="accent" (click)="goToUrl()" type="button">MENU</button>
             </div>
@@ -36,4 +37,3 @@
     </div>
     </div>
   </div>
-

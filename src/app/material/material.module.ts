@@ -16,6 +16,7 @@ import {CdkTreeModule} from '@angular/cdk/tree';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatCardModule } from '@angular/material/card';
 import { MatTableModule } from '@angular/material/table';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 
 @NgModule({
   imports: [
@@ -36,6 +37,7 @@ import { MatTableModule } from '@angular/material/table';
     MatTabsModule,
     MatCardModule,
     MatTableModule,
+    MatProgressSpinnerModule
   ],
   exports: [
       BrowserAnimationsModule,
@@ -54,6 +56,7 @@ import { MatTableModule } from '@angular/material/table';
       MatTabsModule,
       MatCardModule,
       MatTableModule,
+      MatProgressSpinnerModule
   ],
   declarations: []
 })
