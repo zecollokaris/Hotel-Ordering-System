@@ -22,7 +22,7 @@ export class MenuComponent implements OnInit {
   }
   getId(name: string) {
    for (let category of this.categorys) {
-     if (name == category.name) {
+     if (name === category.name) {
         return category.id;
      }
    }
