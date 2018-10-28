@@ -1,9 +1,9 @@
-# Hair-Salon Java App :haircut:
+# :curry: Hotel Ordering System App :spaghetti:
 
-## Project contributors 
-### Collins Magondu - TEAM LEADER & Back-En Dev
-### Collins Kariuki - Front-End Dev
-### Wesley Mbate - Content Dev
+## Authors
+- Collins Magondu - TEAM LEADER & Back-En Dev
+- Collins Kariuki - Front-End Dev
+- Wesley Mbate - Content Dev
         
 
 ## Description :notebook:
@@ -19,7 +19,7 @@
 
 
 ### Technologies used
-
+   * Jackson    
    * JAVA
    * Gradle
    * Spark
